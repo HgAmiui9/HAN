@@ -64,6 +64,7 @@ class HANLayer(torch.nn.Module):
                     allow_zero_in_degree=True,
                 )
             )
+        # 语义级的注意力
         self.semantic_attention = SemanticAttention(
             in_size=out_size * layer_num_heads
         )
